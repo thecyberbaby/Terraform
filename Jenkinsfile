@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    // Environment variables
+    // Environment variablessss
     environment {
         GIT_BRANCH = sh(script: "git rev-parse --abbrev-ref HEAD", returnStdout: true).trim()
     }
