@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building the application...'
+                echo 'Building the application..'
                 // Add your build commands here (e.g., Maven, npm, etc.)
             }
         }
