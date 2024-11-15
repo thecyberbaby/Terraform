@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    // Environment variabless
+    // Environment variables
     environment {
         GIT_BRANCH = sh(script: "git rev-parse --abbrev-ref HEAD", returnStdout: true).trim()
     }
@@ -34,7 +34,7 @@ pipeline {
 
     post {
         success {
-            echo 'Build succeeded!!!!'
+            echo 'Build succeeded!'
         }
         failure {
             echo 'Build failed.'
