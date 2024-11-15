@@ -11,7 +11,7 @@ pipeline {
             when {
                 expression { 
                     // Only build if the source branch is 'staging' and target branch is 'master'
-                    GIT_BRANCH ==~ /PR-\d+/ && env.CHANGE_TARGET == 'master' && env.CHANGE_BRANCH == 'staging'
+                    GIT_BRANCH ==~ /PR-\d+/ && env.CHANGE_TARGET == 'main' && env.CHANGE_BRANCH == 'staging'
                 }
             }
             steps {
